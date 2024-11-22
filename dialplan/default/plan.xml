@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<include>
+    <extension name="3000">
+        <condition field="destination_number" expression="^3000$">
+            <action application="lua" data="/etc/freeswitch/scripts/product_inbound.lua"/>
+        </condition>
+    </extension>
+</include>
