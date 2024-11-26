@@ -15,7 +15,9 @@ local function log_to_file(level, message)
     log_file:write(string.format("[%s] %s: %s\n", os.date("%Y-%m-%d %H:%M:%S"), level, message))
     log_file:flush()  -- Ensure the message is written immediately
 end
+
 log_to_file("INFO", "Starting custom_agent.lua script.\n")
+
 if not session:ready() then
     freeswitch.consoleLog("ERR", "Session is not ready.\n")
     return

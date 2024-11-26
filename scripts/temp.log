@@ -1,0 +1,28 @@
+[2024-11-26 20:15:29] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:15:29] ERROR: Session object is not available or not ready.
+[2024-11-26 20:17:22] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:17:22] ERROR: Session object is not available or not ready.
+[2024-11-26 20:17:43] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:17:43] ERROR: Session object is not available or not ready.
+[2024-11-26 20:18:36] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:18:36] ERROR: Session object is not available or not ready.
+[2024-11-26 20:20:49] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:20:49] ERROR: Session object is not ready.
+[2024-11-26 20:23:52] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:23:52] INFO: Session is not ready. Attempting to answer the call.
+[2024-11-26 20:23:52] ERROR: Session is still not ready after answering the call.
+[2024-11-26 20:26:59] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:26:59] DEBUG: Session object initialized.
+[2024-11-26 20:26:59] INFO: Session is not ready. Attempting to answer the call.
+[2024-11-26 20:27:00] ERROR: Session is still not ready after answering the call.
+[2024-11-26 20:27:21] INFO: Starting Lua WebSocket script.
+[2024-11-26 20:27:21] DEBUG: Session object initialized.
+[2024-11-26 20:27:21] INFO: Call UUID: 8a052582-a49a-42fd-80a2-ce64be60c1d6
+[2024-11-26 20:27:21] WARNING: Session variable 'agent' is missing or empty. Defaulting to 'general'.
+[2024-11-26 20:27:21] INFO: Agent: general
+[2024-11-26 20:27:21] INFO: Attempting to connect to WebSocket server.
+[2024-11-26 20:27:21] INFO: WebSocket connection successful.
+[2024-11-26 20:27:21] DEBUG: Sending metadata: {"call_uuid": "8a052582-a49a-42fd-80a2-ce64be60c1d6", "agent": "general"}
+[2024-11-26 20:27:21] INFO: Metadata sent successfully.
+[2024-11-26 20:27:21] INFO: Waiting for WebSocket response.
+[2024-11-26 20:27:21] ERROR: Failed to receive WebSocket response: nil

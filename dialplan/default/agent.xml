@@ -1,0 +1,48 @@
+<include>
+    <extension name="3000">
+        <condition field="destination_number" expression="^3000$">
+            <action application="lua" data="/home/ubuntu/source/freeswitch/scripts/custom_agent.lua"/>
+        </condition>
+    </extension>
+
+    <!-- General AI Agent -->
+    <extension name="ai_agent_general">
+        <condition field="destination_number" expression="^3001$">
+            <action application="answer"/>
+            <action application="lua" data="/home/ubuntu/source/freeswitch/scripts/streaming_agent.lua"/>
+        </condition>
+    </extension>
+
+    <condition field="destination_number" expression="^3001$">
+        <action application="answer"/>
+        <action application="set" data="agent=general"/>
+        <action application="set" data="RECORD_STEREO=true"/>
+        <action application="set" data="media_bug_answer_req=true"/>
+        <action application="lua" data="/home/ubuntu/source/freeswitch/scripts/streaming_agent.lua"/>
+        <action application="hangup"/>
+    </condition>
+
+    <!-- Technical Support AI Agent -->
+    <extension name="ai_agent_technical">
+        <condition field="destination_number" expression="^3002$">
+            <action application="answer"/>
+            <action application="set" data="agent=technical"/>
+            <action application="set" data="RECORD_STEREO=true"/>
+            <action application="set" data="media_bug_answer_req=true"/>
+            <action application="lua" data="/home/ubuntu/source/freeswitch/scripts/streaming_agent.lua"/>
+            <action application="hangup"/>
+        </condition>
+    </extension>
+
+    <!-- Sales AI Agent -->
+    <extension name="ai_agent_sales">
+        <condition field="destination_number" expression="^3003$">
+            <action application="answer"/>
+            <action application="set" data="agent=sales"/>
+            <action application="set" data="RECORD_STEREO=true"/>
+            <action application="set" data="media_bug_answer_req=true"/>
+            <action application="lua" data="/home/ubuntu/source/freeswitch/scripts/streaming_agent.lua"/>
+            <action application="hangup"/>
+        </condition>
+    </extension>
+</include>

@@ -1,6 +1,7 @@
 <configuration name="lua.conf" description="LUA Configuration">
   <settings>
-
+    <param name="debug" value="true"/>
+    <param name="script-dir" value="/usr/local/freeswitch/conf/scripts"/>
     <!-- 
     Specify local directories that will be searched for LUA modules
     These entries will be pre-pended to the LUA_CPATH environment variable
